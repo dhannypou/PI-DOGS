@@ -1,0 +1,24 @@
+
+
+.inputSearch{
+
+    border-radius: 15px;
+    outline: none;
+    padding: 5px;
+
+}
+
+.btnSend{
+    background: none;
+    border: none;
+}
+
+.svgColor{
+    fill: white;
+    cursor: pointer;
+}
+
+.container_search{
+    display: flex;
+    align-items: center;
+}

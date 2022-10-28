@@ -1,0 +1,81 @@
+.container {
+    background: url('../assets/on-the-run-maltipu-little-dog-is-posing.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+.caja1 {
+    height: 100vh;
+    width: 70vw
+}
+
+.caja2 {
+    height: 100vh;
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(255,255,255,.3);
+    background-color: black;
+    border-radius: 30px 30px 30px 30px;
+    -webkit-border-radius: 30px 30px 30px 30px;
+    -moz-border-radius: 30px 30px 30px 30px;
+    -ms-border-radius: 30px 30px 30px 30px;
+    -o-border-radius: 30px 30px 30px 30px;
+}
+
+.btn a {
+    position: relative;
+    display: block;
+    height: 70px;
+    width: 220px;
+    background: linear-gradient(115deg,#4fcf70,#fad648,#a767e5,#12bcfe,#12bcfe,#a767e5,#fad648,#4fcf70);
+    text-align: center;
+    border-radius: 10px;
+    
+}
+
+.btn a span {
+    height: 88%;
+    width: 96%;
+    background: black;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 6px;
+    line-height: 62px;
+    color: #f5f5f5;
+    font-size: 25px;
+
+}
+
+.btn a:hover{
+    animation: animate 0.4s linear infinite;
+}
+
+@keyframes animate {
+    100%{
+        filter: hue-rotate(-360deg);
+}
+}
+
+.welcome{
+    padding-top: 0%;
+    margin-top: 2%;
+    margin-bottom: 10%;
+    margin-right: 5%;
+    font-size: 30px;
+    color: rgb(233, 28, 161);
+    box-shadow: 0 0 10px 0 rgba(201, 5, 143, 0.5);
+    font-family: cursive Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}

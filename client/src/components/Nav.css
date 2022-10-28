@@ -1,0 +1,13 @@
+.optionNavBar {
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    margin-right:100px ;
+   
+}
+
+
+.link{
+    text-decoration: none;
+    color: white;
+}
