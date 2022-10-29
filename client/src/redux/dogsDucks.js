@@ -113,7 +113,7 @@ export const getPageDogs = (currentPageP, doggies) => (dispatch) => {
 export const getDogsByNameAction = (search) => async (dispatch) => {
 
     try {
-        const res = await axios.get('http://localhost:3001/dogs?name=' + search)
+        const res = await axios.get('/dogs?name=' + search)
         console.log(res.data);
         dispatch({
             type: SEARCH_DOGS_OK,
@@ -194,7 +194,7 @@ export const filterDogs = (dogs, option) => (dispatch) => {
 export const allDogGlobal = () => async (dispatch) => {
     try {
 
-        const rta = await fetch("http://localhost:3001/dogs")
+        const rta = await fetch("/dogs")
         const body = await rta.json();
         dispatch({
             type: ALL_DOGS_GLOBAL,
@@ -207,7 +207,7 @@ export const allDogGlobal = () => async (dispatch) => {
 
 export const getTemperaments = () => async (dispatch) => {
     try {
-        const res = await axios.get('http://localhost:3001/temperaments')
+        const res = await axios.get('/temperaments')
         dispatch({
             type: GET_TEMPERAMENTS,
             payload: res.data
